@@ -1,16 +1,21 @@
 /* Custom Styles for Development */
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Helvetica Neue",Arial,sans-serif;font-size:0.85em;padding:10px;0px;}
+
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Helvetica Neue",Arial,sans-serif;font-size:0.85em;padding:0;margin:0;}
+
+.center {text-align: center;}
+.hide,
+.desktop{ position: absolute !important; top: -9999px !important;left: -9999px !important;}
 
 h1,h2,h3,h4,h5,h6{padding:0;margin:0;line-height:1.2em}
 
-.container {max-width: 1200px; margin: 0 inherit;}
+.container {max-width: 1400px; margin: 0 auto;padding:10px;}
 
 .logo{margin-bottom:20px}
 .logo img{width:100%;height:auto;max-width:600px}
 
 .artwork-buttons {margin-top: 20px;}
 
-button{background-color:#FCB040;font-size: 1.4em;margin-bottom: 10px;border-radius: 7px;}
+button{font-size: 1.1em;margin-bottom: 10px;border-radius: 5px;padding: 6px 10px;text-transform: uppercase;}
 
 ul{ border: 1px solid silver;list-style: none; padding:0px; margin:0 0 20px 0;}
 /* ul li{ border: 2px solid red;} */
@@ -18,4 +23,8 @@ ul{ border: 1px solid silver;list-style: none; padding:0px; margin:0 0 20px 0;}
 .short-description {margin: 20px 0;}
 
 .label{text-align:center;background-color: silver; padding:10px 10px; font-size: 1.4em;}
-.value{ padding:0px 10px 10px 10px;}
+.value{ padding:0px 10px 10px 10px; }
+.value li{ padding:0px 10px 10px 10px; }
+
+.your-quote {position:fixed;background-color:white; border-top: 6px solid green; bottom: 0px;width:100%;}
+.customlabel_preview {display:grid;grid-template-columns: 1fr 1fr;}
