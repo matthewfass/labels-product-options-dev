@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Woven Logo Labels</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="logo">
+    <div class="page-wrapper">
+        <div class="logo container">
             <img src="assets/QWLlogo.png" alt="">
         </div>
         <div class="product-name">
@@ -34,9 +36,29 @@
                 <li>
                     <div class="label">Artwork - Upload artwork</div>
                     <div class="value artwork-buttons">
-                        <button>Upload Artwork</button>
-                        <button>Upload Artwork</button>
-                        <button>Upload Artwork</button>
+                        <button class="default">Upload Artwork</button>
+                        <button>Request Free Artwork</button>
+                        <button>Email Artwork</button>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <div class="label">Upload artwork</div>
+                    <div style="display: block;" class="option grid12-5 whitebox2 upload1">
+                        <dl>
+                            <dt>
+                                <!-- <label>Upload Artwork</label> -->
+                            </dt>
+                            <dd>
+                                <div class="input-box">
+                                    <input type="file" id="options_1677_file" name="options_1677_file"
+                                        class="product-custom-option" onchange="opConfig.reloadPrice()">
+                                    <input type="hidden" name="options_1677_file_action" value="save_new">
+                                </div>
+                                <input type="hidden" class="option_value" id="value_option_1677" value="0">
+                            </dd>
+                        </dl>
                     </div>
                 </li>
             </ul>
@@ -161,7 +183,7 @@
                     </div>
                 </li>
             </ul>
-            <ul>
+            <ul class="hidden" >
                 <li>
                     <div class="label">Quantity Unit PriceTotalUnit PriceTotal</div>
                     <div class="value">5 NaNNaN25 NaNNaN50 NaNNaN100 NaN200 $0.54 Each $108.00 Total300 $0.43 Each
@@ -184,11 +206,11 @@
         </div>
     </div>
     <div class="your-quote sticky-footer">
+        <div class="title-bar">Your Quote</div>
         <div class="container">
-            <h5 class="center">Your Quote</h5>
             <div class="customlabel_preview_main stickem stickit">
                 <div class="customlabel_preview_head">
-                    <h6 class="customlabel_preview_head_label center">Woven Logo Labels</h6>
+                    <h3 class="customlabel_preview_head_label center">Woven Logo Labels</h3>
                 </div>
                 <div class="custom-level-comp-preview">
                     <div class="customlabel_preview_1 desktop">
@@ -254,13 +276,13 @@
                         <div class="customlabel_preview_value customlabel_preview_price_value">$30.00</div>
                     </div>
                     <div class="custom_product_addcart center">
-                        <button type="button" title="Add to Cart" id="product-addtocart-button" class="button btn-cart"
-                            onclick="productAddToCartForm.submit(this)"><span style=""><span style="">Add to
-                                    Cart</span></span>
+                        <button type="button" title="Add to Cart" id="product-addtocart-button" class="default button btn-cart"
+                            onclick="productAddToCartForm.submit(this)"><span style=""><span style="">Add to Cart</span></span>
                         </button></div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
