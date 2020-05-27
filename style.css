@@ -1,5 +1,18 @@
 /* Custom Styles for Development */
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Helvetica Neue",Arial,sans-serif}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Helvetica Neue",Arial,sans-serif;font-size:0.85em;padding:10px;0px;}
+
 h1,h2,h3,h4,h5,h6{padding:0;margin:0;line-height:1.2em}
+
+.container {max-width: 1200px; margin: 0 inherit;}
+
 .logo{margin-bottom:20px}
 .logo img{width:100%;height:auto;max-width:600px}
+
+.artwork-buttons {margin-top: 20px;}
+
+button{background-color:#FCB040;font-size: 1.4em;margin-bottom: 10px;border-radius: 7px;}
+
+ul{ border: 1px solid silver;list-style: none; padding:10px; margin:0 0 20px 0;}
+/* ul li{ border: 2px solid red;} */
+
+.label{text-align:center;background-color: silver; padding:10px 10px; font-size: 1.4em;}
