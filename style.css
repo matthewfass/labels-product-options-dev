@@ -12,7 +12,10 @@ h1,h2,h3,h4,h5,h6{padding:0;margin:0;line-height:1.2em}
 
 button{background-color:#FCB040;font-size: 1.4em;margin-bottom: 10px;border-radius: 7px;}
 
-ul{ border: 1px solid silver;list-style: none; padding:10px; margin:0 0 20px 0;}
+ul{ border: 1px solid silver;list-style: none; padding:0px; margin:0 0 20px 0;}
 /* ul li{ border: 2px solid red;} */
 
+.short-description {margin: 20px 0;}
+
 .label{text-align:center;background-color: silver; padding:10px 10px; font-size: 1.4em;}
+.value{ padding:0px 10px 10px 10px;}
